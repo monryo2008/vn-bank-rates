@@ -1,27 +1,47 @@
-# vn-bank-rates
+# 🏦 VN Bank Exchange Rate Aggregator
 
-Exchange rate data for Vietnamese banks, updated daily at 7:00 AM Vietnam time.
+Automatically scrape exchange rates from Vietnamese banks and serve via jsDelivr CDN — **fully free, no server required**.
 
-## CDN URL
+## How It Works
+
+1. **GitHub Actions** runs a scraper daily at 7:00 AM Vietnam time
+2. **Scraper** fetches exchange rates from Vietnamese banks
+3. **Results** saved to `rates.json` and committed to repo
+4. **Frontend** fetches rates via jsDelivr CDN
 
 ```
-https://cdn.jsdelivr.net/gh/monryo2008/vn-bank-rates@main/rates.json
+[GitHub Actions] → [scraper.py] → [rates.json] → [jsDelivr CDN] → [Your Website]
+(Daily 7 AM)    (Parse XML/HTML)  (Auto-commit)  (Free caching)  (Display rates)
 ```
 
-## Data Format
+## ✨ Features
+
+- ✅ **Fully automated** — runs daily via GitHub Actions free tier
+- ✅ **No server needed** — rates served via CDN
+- ✅ **Live data** — from official bank websites
+- ✅ **Multiple banks** — currently: Vietcombank, BIDV (expandable)
+- ✅ **Error resilient** — one bank failure doesn't break the system
+
+## 📊 Data Format
+
+The scraper generates `rates.json` with this structure:
 
 ```json
 {
-  "updated_at": "2026-05-02T07:00:00+07:00",
+  "updated_at": "2025-01-15T07:00:00+07:00",
   "banks": {
     "vietcombank": {
       "name": "Vietcombank",
       "rates": [
         { "currency": "USD", "buy_cash": 26108, "buy_transfer": 26138, "sell": 26368 },
-        { "currency": "EUR", "buy_cash": 30026, "buy_transfer": 30329, "sell": 31633 },
-        { "currency": "JPY", "buy_cash": 159, "buy_transfer": 160, "sell": 169 },
-        { "currency": "GBP", "buy_cash": 34646, "buy_transfer": 34996, "sell": 36144 },
-        { "currency": "AUD", "buy_cash": 18353, "buy_transfer": 18539, "sell": 19147 }
+        { "currency": "EUR", "buy_cash": 30026, "buy_transfer": 30329, "sell": 31633 }
+      ],
+      "error": false
+    },
+    "bidv": {
+      "name": "BIDV",
+      "rates": [
+        { "currency": "USD", "buy": 25340, "buy_transfer": 25370, "sell": 25670 }
       ],
       "error": false
     }
@@ -29,19 +49,157 @@ https://cdn.jsdelivr.net/gh/monryo2008/vn-bank-rates@main/rates.json
 }
 ```
 
-## Usage
+## 🚀 Setup Instructions
+
+### Step 1: Create GitHub Repository
+
+1. Go to [github.com/new](https://github.com/new)
+2. Repository name: `vn-bank-rates` (or any name you prefer)
+3. Choose **Public** (to access via jsDelivr)
+4. Click "Create repository"
+
+### Step 2: Push Code to GitHub
+
+You now have 5 files locally:
+- `scraper.py` — main scraper script
+- `requirements.txt` — Python dependencies
+- `.github/workflows/scrape.yml` — GitHub Actions workflow
+- `README.md` — this file
+- `ENDPOINT_VERIFICATION_REPORT.md` — verification details
+
+Push them to your GitHub repo:
+
+```bash
+cd "E:\Coding projects\VN Exchange Rates"
+
+# Initialize git (if not already done)
+git init
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/vn-bank-rates.git
+
+# Push code
+git add .
+git commit -m "Initial commit: VN bank exchange rate scraper"
+git push -u origin main
+```
+
+### Step 3: Enable GitHub Actions
+
+1. Go to your GitHub repo
+2. Click **Settings** → **Actions** → **General**
+3. Under "Workflow permissions", select **"Read and write permissions"**
+4. Click **Save**
+
+### Step 4: Test Manually
+
+1. Go to your repo
+2. Click **Actions** tab
+3. Click **"Scrape Exchange Rates"** workflow on the left
+4. Click **"Run workflow"** → **"Run workflow"** button
+5. Wait for it to complete (usually 30 seconds)
+6. Go to **Code** tab — you should see `rates.json` with exchange rates
+
+### Step 5: Use in Your Website
+
+Once `rates.json` is in your repo, fetch it from your frontend:
 
 ```javascript
-fetch('https://cdn.jsdelivr.net/gh/monryo2008/vn-bank-rates@main/rates.json')
+// Replace YOUR_USERNAME and YOUR_REPO_NAME
+const url = 'https://cdn.jsdelivr.net/gh/YOUR_USERNAME/YOUR_REPO_NAME@main/rates.json';
+
+fetch(url)
   .then(res => res.json())
   .then(data => {
-    console.log(data.updated_at);
-    console.log(data.banks.vietcombank.rates);
+    console.log('Updated at:', data.updated_at);
+    console.log('USD rate:', data.banks.vietcombank.rates[0].sell);
   });
 ```
 
-> jsDelivr caches for ~12 hours. Add `?v=timestamp` to bypass cache if needed.
+**Optional:** Add `?v=` + timestamp to bypass cache:
+```javascript
+const now = Date.now();
+const url = `https://cdn.jsdelivr.net/gh/YOUR_USERNAME/YOUR_REPO_NAME@main/rates.json?v=${now}`;
+```
+
+## 📋 Supported Currencies (MVP)
+
+Currently scraping:
+- **Vietcombank**: USD, EUR, JPY, GBP, AUD (with buy/transfer/sell rates)
+- **BIDV**: USD, EUR, JPY, GBP, AUD
+
+To add more banks/currencies, see [ENDPOINT_VERIFICATION_REPORT.md](ENDPOINT_VERIFICATION_REPORT.md).
+
+## ⚙️ How to Add More Banks
+
+See [ENDPOINT_VERIFICATION_REPORT.md](ENDPOINT_VERIFICATION_REPORT.md) for:
+- Additional banks ready to implement (Techcombank, MB Bank, ACB, VPBank, Sacombank)
+- How to verify new bank endpoints
+- How to add new scrapers
+
+## 🔧 Manual Testing (Optional)
+
+To test scraper locally (requires Python 3.11+):
+
+```bash
+pip install -r requirements.txt
+python scraper.py
+cat rates.json  # Check output
+```
+
+## 📝 Files Explained
+
+| File | Purpose |
+|------|---------|
+| `scraper.py` | Main scraper (fetches and parses exchange rates) |
+| `requirements.txt` | Python dependencies (requests, beautifulsoup4, lxml) |
+| `.github/workflows/scrape.yml` | GitHub Actions automation (runs daily at 7 AM) |
+| `rates.json` | Output (auto-generated by scraper, committed daily) |
+| `ENDPOINT_VERIFICATION_REPORT.md` | Detailed endpoint analysis and findings |
+
+## ⚠️ Important Notes
+
+1. **GitHub Actions Free Tier:** Limited to 2,000 free minutes/month, but this scraper uses ~1 min/day = ~30 min/month ✅
+2. **Rate Limits:** 
+   - Vietcombank: 1 request per 5 minutes (handled)
+   - BIDV: No known limit (using 10-second delay to be safe)
+3. **jsDelivr Cache:** ~12 hours. Add `?v=timestamp` to bypass.
+4. **Data Age:** Rates updated daily at 7:00 AM Vietnam time
+
+## 🆘 Troubleshooting
+
+### GitHub Actions workflow not running?
+- Check **Settings** → **Actions** → **Workflow permissions** is set to "Read and write"
+- Try clicking "Run workflow" manually
+
+### `rates.json` not updating?
+- Check the Actions tab → workflow logs for errors
+- Verify scraper.py runs without errors locally
+
+### Exchange rates missing from certain bank?
+- Check [ENDPOINT_VERIFICATION_REPORT.md](ENDPOINT_VERIFICATION_REPORT.md) for known issues
+- Current MVP includes Vietcombank + BIDV only
+
+### jsDelivr not loading rates?
+- Try refreshing with `?v=` + timestamp: `...rates.json?v=20250115`
+- Check that your GitHub repo is **Public** (jsDelivr needs public access)
+
+## 📚 References
+
+- **Project Overview:** See [PROJECT_OVERVIEW.md](PROJECT_OVERVIEW.md)
+- **Endpoint Analysis:** See [ENDPOINT_VERIFICATION_REPORT.md](ENDPOINT_VERIFICATION_REPORT.md)
+- **jsDelivr Docs:** https://www.jsdelivr.com/
+- **GitHub Actions Cron:** https://crontab.guru/ (check times)
+
+## 🎯 Next Steps
+
+1. ✅ Set up GitHub repo (Steps 1-2)
+2. ✅ Enable GitHub Actions (Step 3)
+3. ✅ Test manually (Step 4)
+4. ✅ Integrate into your website (Step 5)
+5. 📅 (Optional) Add more banks from [ENDPOINT_VERIFICATION_REPORT.md](ENDPOINT_VERIFICATION_REPORT.md)
 
 ---
 
-*Scraper code is private. Data updates automatically every day.*
+**Last Updated:** 2026-05-01  
+**MVP Status:** Vietcombank + BIDV working  
+**Next Phase:** Add VietinBank API, expand to 5+ banks
