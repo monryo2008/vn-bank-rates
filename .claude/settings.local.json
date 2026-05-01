@@ -16,7 +16,8 @@
       "Bash(git commit *)",
       "Bash(git branch *)",
       "Bash(git remote *)",
-      "Bash(gh repo *)"
+      "Bash(gh repo *)",
+      "PowerShell(cd \"E:\\\\Coding projects\\\\VN Exchange Rates\"; git push \"https://$\\(gh auth token\\)@github.com/moryo2088/vn-bank-rates.git\" main 2>&1)"
     ]
   }
 }
