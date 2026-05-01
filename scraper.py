@@ -8,9 +8,14 @@ import requests
 import json
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
-from typing import Dict, Any, Optional, List
+from typing import Dict, Any, Optional
 import logging
+import ssl
+import urllib3
 from bs4 import BeautifulSoup
+
+# Suppress SSL warnings for legacy servers (BIDV)
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # Setup logging
 logging.basicConfig(
@@ -19,28 +24,16 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Headers to avoid being blocked
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
 }
 
-# Vietnam timezone (UTC+7)
 VN_TZ = timezone(timedelta(hours=7))
 
 
-def fetch_url(url: str, timeout: int = 15) -> Optional[str]:
-    """
-    Fetch content from URL with error handling.
-
-    Args:
-        url: URL to fetch
-        timeout: Request timeout in seconds
-
-    Returns:
-        Response text or None if error
-    """
+def fetch_url(url: str, timeout: int = 15, verify_ssl: bool = True) -> Optional[str]:
     try:
-        response = requests.get(url, headers=HEADERS, timeout=timeout)
+        response = requests.get(url, headers=HEADERS, timeout=timeout, verify=verify_ssl)
         response.raise_for_status()
         return response.text
     except requests.exceptions.RequestException as e:
@@ -131,7 +124,8 @@ def scrape_bidv() -> Dict[str, Any]:
         'error_msg': None
     }
 
-    content = fetch_url(url)
+    # BIDV uses legacy SSL — disable verification
+    content = fetch_url(url, verify_ssl=False)
     if not content:
         result['error'] = True
         result['error_msg'] = 'Failed to fetch HTML page'

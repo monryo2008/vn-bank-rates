@@ -30,22 +30,16 @@ jobs:
       - name: Run scraper
         run: python scraper.py
 
-      - name: Check if rates.json changed
-        id: check_changes
-        run: |
-          if git diff --quiet rates.json; then
-            echo "has_changes=false" >> $GITHUB_OUTPUT
-          else
-            echo "has_changes=true" >> $GITHUB_OUTPUT
-          fi
-
       - name: Commit and push updates
-        if: steps.check_changes.outputs.has_changes == 'true'
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
 
-          TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
           git add rates.json
-          git commit -m "chore: update rates [$TIMESTAMP]"
-          git push
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+            git commit -m "chore: update rates [$TIMESTAMP]"
+            git push
+          fi
