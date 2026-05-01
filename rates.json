@@ -1,0 +1,48 @@
+{
+  "updated_at": "2026-05-01T23:49:54.268727+07:00",
+  "banks": {
+    "vietcombank": {
+      "name": "Vietcombank",
+      "rates": [
+        {
+          "currency": "AUD",
+          "buy_cash": 18353.72,
+          "buy_transfer": 18539.11,
+          "sell": 19147.3
+        },
+        {
+          "currency": "EUR",
+          "buy_cash": 30026.59,
+          "buy_transfer": 30329.89,
+          "sell": 31633.51
+        },
+        {
+          "currency": "GBP",
+          "buy_cash": 34646.46,
+          "buy_transfer": 34996.43,
+          "sell": 36144.52
+        },
+        {
+          "currency": "JPY",
+          "buy_cash": 159.07,
+          "buy_transfer": 160.68,
+          "sell": 169.3
+        },
+        {
+          "currency": "USD",
+          "buy_cash": 26108.0,
+          "buy_transfer": 26138.0,
+          "sell": 26368.0
+        }
+      ],
+      "error": false,
+      "error_msg": null
+    },
+    "bidv": {
+      "name": "BIDV",
+      "rates": [],
+      "error": true,
+      "error_msg": "Failed to fetch HTML page"
+    }
+  }
+}
