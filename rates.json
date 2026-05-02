@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-02T21:36:03.086527+07:00",
+  "updated_at": "2026-05-02T21:49:44.951403+07:00",
   "banks": {
     "vietcombank": {
       "name": "Vietcombank",
@@ -79,7 +79,7 @@
       "name": "VietinBank",
       "rates": [],
       "error": false,
-      "error_msg": null
+      "error_msg": "VNAppMob returned no data for ctg"
     },
     "techcombank": {
       "name": "Techcombank",
@@ -239,7 +239,7 @@
       "name": "Eximbank",
       "rates": [],
       "error": false,
-      "error_msg": null
+      "error_msg": "No data (rates published during morning banking hours only)"
     },
     "vpbank": {
       "name": "VPBank",
