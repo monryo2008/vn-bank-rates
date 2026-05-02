@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-02T15:30:22.209934+07:00",
+  "updated_at": "2026-05-02T16:00:14.049182+07:00",
   "banks": {
     "vietcombank": {
       "name": "Vietcombank",
@@ -84,6 +84,12 @@
     "techcombank": {
       "name": "Techcombank",
       "rates": [
+        {
+          "currency": "USD",
+          "buy_cash": 26158.0,
+          "buy_transfer": 26178.0,
+          "sell": 26368.0
+        },
         {
           "currency": "AUD",
           "buy_cash": 18311.0,
