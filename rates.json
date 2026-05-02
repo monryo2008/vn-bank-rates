@@ -1,9 +1,15 @@
 {
-  "updated_at": "2026-05-02T12:13:28.003052+07:00",
+  "updated_at": "2026-05-02T15:30:22.209934+07:00",
   "banks": {
     "vietcombank": {
       "name": "Vietcombank",
       "rates": [
+        {
+          "currency": "USD",
+          "buy_cash": 26108.0,
+          "buy_transfer": 26138.0,
+          "sell": 26368.0
+        },
         {
           "currency": "AUD",
           "buy_cash": 18353.72,
@@ -17,22 +23,16 @@
           "sell": 31633.51
         },
         {
-          "currency": "GBP",
-          "buy_cash": 34646.46,
-          "buy_transfer": 34996.43,
-          "sell": 36144.52
-        },
-        {
           "currency": "JPY",
           "buy_cash": 159.07,
           "buy_transfer": 160.68,
           "sell": 169.3
         },
         {
-          "currency": "USD",
-          "buy_cash": 26108.0,
-          "buy_transfer": 26138.0,
-          "sell": 26368.0
+          "currency": "GBP",
+          "buy_cash": 34646.46,
+          "buy_transfer": 34996.43,
+          "sell": 36144.52
         }
       ],
       "error": false,
@@ -41,6 +41,12 @@
     "bidv": {
       "name": "BIDV",
       "rates": [
+        {
+          "currency": "USD",
+          "buy_cash": 26148.0,
+          "buy_transfer": 26148.0,
+          "sell": 26368.0
+        },
         {
           "currency": "AUD",
           "buy_cash": 18560.0,
@@ -54,22 +60,16 @@
           "sell": 31658.0
         },
         {
-          "currency": "GBP",
-          "buy_cash": 35021.0,
-          "buy_transfer": 35116.0,
-          "sell": 36099.0
-        },
-        {
           "currency": "JPY",
           "buy_cash": 160.9,
           "buy_transfer": 161.19,
           "sell": 169.87
         },
         {
-          "currency": "USD",
-          "buy_cash": 26148.0,
-          "buy_transfer": 26148.0,
-          "sell": 26368.0
+          "currency": "GBP",
+          "buy_cash": 35021.0,
+          "buy_transfer": 35116.0,
+          "sell": 36099.0
         }
       ],
       "error": false,
@@ -97,16 +97,16 @@
           "sell": 31497.0
         },
         {
-          "currency": "GBP",
-          "buy_cash": 34780.0,
-          "buy_transfer": 35173.0,
-          "sell": 36105.0
-        },
-        {
           "currency": "JPY",
           "buy_cash": 158.15,
           "buy_transfer": 162.32,
           "sell": 168.45
+        },
+        {
+          "currency": "GBP",
+          "buy_cash": 34780.0,
+          "buy_transfer": 35173.0,
+          "sell": 36105.0
         }
       ],
       "error": false,
@@ -122,16 +122,16 @@
           "sell": 26368.0
         },
         {
+          "currency": "AUD",
+          "buy_cash": 18553.0,
+          "buy_transfer": 18628.0,
+          "sell": 19223.0
+        },
+        {
           "currency": "EUR",
           "buy_cash": 30275.0,
           "buy_transfer": 30397.0,
           "sell": 31579.0
-        },
-        {
-          "currency": "GBP",
-          "buy_cash": 34975.0,
-          "buy_transfer": 35115.0,
-          "sell": 36125.0
         },
         {
           "currency": "JPY",
@@ -140,10 +140,10 @@
           "sell": 169.07
         },
         {
-          "currency": "AUD",
-          "buy_cash": 18553.0,
-          "buy_transfer": 18628.0,
-          "sell": 19223.0
+          "currency": "GBP",
+          "buy_cash": 34975.0,
+          "buy_transfer": 35115.0,
+          "sell": 36125.0
         }
       ],
       "error": false,
@@ -177,16 +177,16 @@
           "sell": 32123.0
         },
         {
-          "currency": "GBP",
-          "buy_cash": 35079.0,
-          "buy_transfer": 35129.0,
-          "sell": 36887.0
-        },
-        {
           "currency": "JPY",
           "buy_cash": 161.33,
           "buy_transfer": 161.83,
           "sell": 172.37
+        },
+        {
+          "currency": "GBP",
+          "buy_cash": 35079.0,
+          "buy_transfer": 35129.0,
+          "sell": 36887.0
         }
       ],
       "error": false,
@@ -197,12 +197,6 @@
       "rates": [],
       "error": true,
       "error_msg": "Rate table not found in HTML"
-    },
-    "shb": {
-      "name": "SHB",
-      "rates": [],
-      "error": true,
-      "error_msg": "Fetch failed"
     },
     "tpbank": {
       "name": "TPBank",
