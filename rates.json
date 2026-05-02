@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-02T21:49:44.951403+07:00",
+  "updated_at": "2026-05-02T22:08:36.233417+07:00",
   "banks": {
     "vietcombank": {
       "name": "Vietcombank",
@@ -78,8 +78,8 @@
     "vietinbank": {
       "name": "VietinBank",
       "rates": [],
-      "error": false,
-      "error_msg": "VNAppMob returned no data for ctg"
+      "error": true,
+      "error_msg": "Fetch failed"
     },
     "techcombank": {
       "name": "Techcombank",
@@ -196,7 +196,7 @@
       "name": "MBBank",
       "rates": [],
       "error": true,
-      "error_msg": "Fetch failed"
+      "error_msg": "HTTP 403"
     },
     "sacombank": {
       "name": "Sacombank",
@@ -234,12 +234,6 @@
       ],
       "error": false,
       "error_msg": null
-    },
-    "eximbank": {
-      "name": "Eximbank",
-      "rates": [],
-      "error": false,
-      "error_msg": "No data (rates published during morning banking hours only)"
     },
     "vpbank": {
       "name": "VPBank",
