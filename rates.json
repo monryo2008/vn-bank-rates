@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-02T09:26:29.973428+07:00",
+  "updated_at": "2026-05-02T11:53:19.290388+07:00",
   "banks": {
     "vietcombank": {
       "name": "Vietcombank",
@@ -42,7 +42,86 @@
       "name": "BIDV",
       "rates": [],
       "error": true,
-      "error_msg": "Failed to fetch HTML page"
+      "error_msg": "Fetch failed (SSL)"
+    },
+    "techcombank": {
+      "name": "Techcombank",
+      "rates": [],
+      "error": true,
+      "error_msg": "JSON error: Expecting value: line 2 column 1 (char 1)"
+    },
+    "agribank": {
+      "name": "Agribank",
+      "rates": [
+        {
+          "currency": "USD",
+          "buy_cash": 26118.0,
+          "buy_transfer": 26148.0,
+          "sell": 26368.0
+        },
+        {
+          "currency": "EUR",
+          "buy_cash": 30275.0,
+          "buy_transfer": 30397.0,
+          "sell": 31579.0
+        },
+        {
+          "currency": "GBP",
+          "buy_cash": 34975.0,
+          "buy_transfer": 35115.0,
+          "sell": 36125.0
+        },
+        {
+          "currency": "JPY",
+          "buy_cash": 161.14,
+          "buy_transfer": 161.79,
+          "sell": 169.07
+        },
+        {
+          "currency": "AUD",
+          "buy_cash": 18553.0,
+          "buy_transfer": 18628.0,
+          "sell": 19223.0
+        }
+      ],
+      "error": false,
+      "error_msg": null
+    },
+    "acb": {
+      "name": "ACB",
+      "rates": [],
+      "error": true,
+      "error_msg": "Rate table not found in HTML"
+    },
+    "mbbank": {
+      "name": "MBBank",
+      "rates": [],
+      "error": false,
+      "error_msg": null
+    },
+    "sacombank": {
+      "name": "Sacombank",
+      "rates": [],
+      "error": false,
+      "error_msg": null
+    },
+    "vpbank": {
+      "name": "VPBank",
+      "rates": [],
+      "error": true,
+      "error_msg": "Rate table not found in HTML"
+    },
+    "shb": {
+      "name": "SHB",
+      "rates": [],
+      "error": true,
+      "error_msg": "Fetch failed"
+    },
+    "tpbank": {
+      "name": "TPBank",
+      "rates": [],
+      "error": false,
+      "error_msg": null
     }
   }
 }
