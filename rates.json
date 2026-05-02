@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-02T11:53:19.290388+07:00",
+  "updated_at": "2026-05-02T12:13:28.003052+07:00",
   "banks": {
     "vietcombank": {
       "name": "Vietcombank",
@@ -40,15 +40,77 @@
     },
     "bidv": {
       "name": "BIDV",
+      "rates": [
+        {
+          "currency": "AUD",
+          "buy_cash": 18560.0,
+          "buy_transfer": 18627.0,
+          "sell": 19210.0
+        },
+        {
+          "currency": "EUR",
+          "buy_cash": 30378.0,
+          "buy_transfer": 30402.0,
+          "sell": 31658.0
+        },
+        {
+          "currency": "GBP",
+          "buy_cash": 35021.0,
+          "buy_transfer": 35116.0,
+          "sell": 36099.0
+        },
+        {
+          "currency": "JPY",
+          "buy_cash": 160.9,
+          "buy_transfer": 161.19,
+          "sell": 169.87
+        },
+        {
+          "currency": "USD",
+          "buy_cash": 26148.0,
+          "buy_transfer": 26148.0,
+          "sell": 26368.0
+        }
+      ],
+      "error": false,
+      "error_msg": null
+    },
+    "vietinbank": {
+      "name": "VietinBank",
       "rates": [],
-      "error": true,
-      "error_msg": "Fetch failed (SSL)"
+      "error": false,
+      "error_msg": null
     },
     "techcombank": {
       "name": "Techcombank",
-      "rates": [],
-      "error": true,
-      "error_msg": "JSON error: Expecting value: line 2 column 1 (char 1)"
+      "rates": [
+        {
+          "currency": "AUD",
+          "buy_cash": 18311.0,
+          "buy_transfer": 18587.0,
+          "sell": 19160.0
+        },
+        {
+          "currency": "EUR",
+          "buy_cash": 30195.0,
+          "buy_transfer": 30469.0,
+          "sell": 31497.0
+        },
+        {
+          "currency": "GBP",
+          "buy_cash": 34780.0,
+          "buy_transfer": 35173.0,
+          "sell": 36105.0
+        },
+        {
+          "currency": "JPY",
+          "buy_cash": 158.15,
+          "buy_transfer": 162.32,
+          "sell": 168.45
+        }
+      ],
+      "error": false,
+      "error_msg": null
     },
     "agribank": {
       "name": "Agribank",
@@ -87,21 +149,46 @@
       "error": false,
       "error_msg": null
     },
-    "acb": {
-      "name": "ACB",
-      "rates": [],
-      "error": true,
-      "error_msg": "Rate table not found in HTML"
-    },
     "mbbank": {
       "name": "MBBank",
       "rates": [],
-      "error": false,
-      "error_msg": null
+      "error": true,
+      "error_msg": "Fetch failed"
     },
     "sacombank": {
       "name": "Sacombank",
-      "rates": [],
+      "rates": [
+        {
+          "currency": "USD",
+          "buy_cash": 26228.0,
+          "buy_transfer": 26228.0,
+          "sell": 26368.0
+        },
+        {
+          "currency": "AUD",
+          "buy_cash": 18490.0,
+          "buy_transfer": 18590.0,
+          "sell": 19515.0
+        },
+        {
+          "currency": "EUR",
+          "buy_cash": 30368.0,
+          "buy_transfer": 30398.0,
+          "sell": 32123.0
+        },
+        {
+          "currency": "GBP",
+          "buy_cash": 35079.0,
+          "buy_transfer": 35129.0,
+          "sell": 36887.0
+        },
+        {
+          "currency": "JPY",
+          "buy_cash": 161.33,
+          "buy_transfer": 161.83,
+          "sell": 172.37
+        }
+      ],
       "error": false,
       "error_msg": null
     },
