@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-02T16:00:14.049182+07:00",
+  "updated_at": "2026-05-02T17:09:28.860695+07:00",
   "banks": {
     "vietcombank": {
       "name": "Vietcombank",
@@ -155,6 +155,43 @@
       "error": false,
       "error_msg": null
     },
+    "acb": {
+      "name": "ACB",
+      "rates": [
+        {
+          "currency": "USD",
+          "buy_cash": 26130.0,
+          "buy_transfer": 26160.0,
+          "sell": 26368.0
+        },
+        {
+          "currency": "AUD",
+          "buy_cash": 18452.0,
+          "buy_transfer": 18573.0,
+          "sell": 19237.0
+        },
+        {
+          "currency": "EUR",
+          "buy_cash": 30217.0,
+          "buy_transfer": 30339.0,
+          "sell": 31456.0
+        },
+        {
+          "currency": "JPY",
+          "buy_cash": 161.28,
+          "buy_transfer": 162.09,
+          "sell": 168.4
+        },
+        {
+          "currency": "GBP",
+          "buy_cash": null,
+          "buy_transfer": 35037.0,
+          "sell": 36219.0
+        }
+      ],
+      "error": false,
+      "error_msg": null
+    },
     "mbbank": {
       "name": "MBBank",
       "rates": [],
@@ -195,6 +232,12 @@
           "sell": 36887.0
         }
       ],
+      "error": false,
+      "error_msg": null
+    },
+    "eximbank": {
+      "name": "Eximbank",
+      "rates": [],
       "error": false,
       "error_msg": null
     },
