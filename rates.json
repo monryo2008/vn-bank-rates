@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-30T09:45:12.060103+07:00",
+  "updated_at": "2026-05-31T10:27:10.312046+07:00",
   "banks": {
     "vietcombank": {
       "name": "Vietcombank",
@@ -78,41 +78,41 @@
     "vietinbank": {
       "name": "VietinBank",
       "rates": [],
-      "error": true,
-      "error_msg": "Fetch failed"
+      "error": false,
+      "error_msg": null
     },
     "techcombank": {
       "name": "Techcombank",
       "rates": [
         {
           "currency": "USD",
-          "buy_cash": 26106.0,
-          "buy_transfer": 26120.0,
+          "buy_cash": 26111.0,
+          "buy_transfer": 26125.0,
           "sell": 26395.0
         },
         {
           "currency": "AUD",
-          "buy_cash": 18357.0,
-          "buy_transfer": 18633.0,
-          "sell": 19209.0
+          "buy_cash": 18361.0,
+          "buy_transfer": 18636.0,
+          "sell": 19213.0
         },
         {
           "currency": "EUR",
-          "buy_cash": 30032.0,
-          "buy_transfer": 30305.0,
-          "sell": 31338.0
+          "buy_cash": 30037.0,
+          "buy_transfer": 30311.0,
+          "sell": 31344.0
         },
         {
           "currency": "JPY",
-          "buy_cash": 158.41,
-          "buy_transfer": 162.58,
-          "sell": 168.73
+          "buy_cash": 158.44,
+          "buy_transfer": 162.61,
+          "sell": 168.76
         },
         {
           "currency": "GBP",
-          "buy_cash": 34597.0,
-          "buy_transfer": 34989.0,
-          "sell": 35927.0
+          "buy_cash": 34603.0,
+          "buy_transfer": 34996.0,
+          "sell": 35934.0
         }
       ],
       "error": false,
