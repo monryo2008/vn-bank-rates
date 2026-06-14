@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-13T09:59:34.762391+07:00",
+  "updated_at": "2026-06-14T10:37:51.021719+07:00",
   "banks": {
     "vietcombank": {
       "name": "Vietcombank",
@@ -78,8 +78,8 @@
     "vietinbank": {
       "name": "VietinBank",
       "rates": [],
-      "error": true,
-      "error_msg": "Fetch failed"
+      "error": false,
+      "error_msg": null
     },
     "techcombank": {
       "name": "Techcombank",
