@@ -1,38 +1,38 @@
 {
-  "updated_at": "2026-06-14T10:37:51.021719+07:00",
+  "updated_at": "2026-06-15T10:52:58.310188+07:00",
   "banks": {
     "vietcombank": {
       "name": "Vietcombank",
       "rates": [
         {
           "currency": "USD",
-          "buy_cash": 26092.0,
-          "buy_transfer": 26122.0,
-          "sell": 26412.0
+          "buy_cash": 26093.0,
+          "buy_transfer": 26123.0,
+          "sell": 26423.0
         },
         {
           "currency": "AUD",
-          "buy_cash": 18061.05,
-          "buy_transfer": 18243.49,
-          "sell": 18827.73
+          "buy_cash": 18120.01,
+          "buy_transfer": 18303.05,
+          "sell": 18889.19
         },
         {
           "currency": "EUR",
-          "buy_cash": 29687.29,
-          "buy_transfer": 29987.16,
-          "sell": 31252.39
+          "buy_cash": 29733.44,
+          "buy_transfer": 30033.77,
+          "sell": 31300.97
         },
         {
           "currency": "JPY",
-          "buy_cash": 158.69,
-          "buy_transfer": 160.29,
-          "sell": 168.77
+          "buy_cash": 158.6,
+          "buy_transfer": 160.2,
+          "sell": 168.68
         },
         {
           "currency": "GBP",
-          "buy_cash": 34391.62,
-          "buy_transfer": 34739.01,
-          "sell": 35851.52
+          "buy_cash": 34468.53,
+          "buy_transfer": 34816.7,
+          "sell": 35931.7
         }
       ],
       "error": false,
@@ -43,33 +43,33 @@
       "rates": [
         {
           "currency": "USD",
-          "buy_cash": 26132.0,
-          "buy_transfer": 26132.0,
-          "sell": 26412.0
+          "buy_cash": 26097.0,
+          "buy_transfer": 26097.0,
+          "sell": 26423.0
         },
         {
           "currency": "AUD",
-          "buy_cash": 18203.0,
-          "buy_transfer": 18269.0,
-          "sell": 18886.0
+          "buy_cash": 18287.0,
+          "buy_transfer": 18353.0,
+          "sell": 19007.0
         },
         {
           "currency": "EUR",
-          "buy_cash": 29989.0,
-          "buy_transfer": 30013.0,
-          "sell": 31325.0
+          "buy_cash": 30007.0,
+          "buy_transfer": 30031.0,
+          "sell": 31402.0
         },
         {
           "currency": "JPY",
-          "buy_cash": 160.01,
-          "buy_transfer": 160.3,
-          "sell": 169.32
+          "buy_cash": 159.89,
+          "buy_transfer": 160.18,
+          "sell": 169.5
         },
         {
           "currency": "GBP",
-          "buy_cash": 34712.0,
-          "buy_transfer": 34806.0,
-          "sell": 35867.0
+          "buy_cash": 34739.0,
+          "buy_transfer": 34833.0,
+          "sell": 35958.0
         }
       ],
       "error": false,
@@ -86,33 +86,33 @@
       "rates": [
         {
           "currency": "USD",
-          "buy_cash": 26111.0,
-          "buy_transfer": 26125.0,
-          "sell": 26412.0
+          "buy_cash": 26098.0,
+          "buy_transfer": 26112.0,
+          "sell": 26423.0
         },
         {
           "currency": "AUD",
-          "buy_cash": 17994.0,
-          "buy_transfer": 18268.0,
-          "sell": 18858.0
+          "buy_cash": 18074.0,
+          "buy_transfer": 18348.0,
+          "sell": 18921.0
         },
         {
           "currency": "EUR",
-          "buy_cash": 29799.0,
-          "buy_transfer": 30021.0,
-          "sell": 31102.0
+          "buy_cash": 29865.0,
+          "buy_transfer": 30088.0,
+          "sell": 31166.0
         },
         {
           "currency": "JPY",
-          "buy_cash": 157.47,
+          "buy_cash": 157.48,
           "buy_transfer": 161.63,
           "sell": 167.78
         },
         {
           "currency": "GBP",
-          "buy_cash": 34464.0,
-          "buy_transfer": 34856.0,
-          "sell": 35794.0
+          "buy_cash": 34526.0,
+          "buy_transfer": 34918.0,
+          "sell": 35859.0
         }
       ],
       "error": false,
@@ -123,33 +123,33 @@
       "rates": [
         {
           "currency": "USD",
-          "buy_cash": 26122.0,
-          "buy_transfer": 26142.0,
-          "sell": 26412.0
+          "buy_cash": 26113.0,
+          "buy_transfer": 26133.0,
+          "sell": 26423.0
         },
         {
           "currency": "AUD",
-          "buy_cash": 18194.0,
-          "buy_transfer": 18267.0,
-          "sell": 18859.0
+          "buy_cash": 18254.0,
+          "buy_transfer": 18327.0,
+          "sell": 18920.0
         },
         {
           "currency": "EUR",
-          "buy_cash": 29898.0,
-          "buy_transfer": 30018.0,
-          "sell": 31205.0
+          "buy_cash": 29963.0,
+          "buy_transfer": 30083.0,
+          "sell": 31272.0
         },
         {
           "currency": "JPY",
           "buy_cash": 160.23,
           "buy_transfer": 160.87,
-          "sell": 168.69
+          "sell": 168.71
         },
         {
           "currency": "GBP",
-          "buy_cash": 34676.0,
-          "buy_transfer": 34815.0,
-          "sell": 35833.0
+          "buy_cash": 34754.0,
+          "buy_transfer": 34894.0,
+          "sell": 35914.0
         }
       ],
       "error": false,
@@ -160,33 +160,33 @@
       "rates": [
         {
           "currency": "USD",
-          "buy_cash": 26090.0,
-          "buy_transfer": 26120.0,
-          "sell": 26412.0
+          "buy_cash": 26070.0,
+          "buy_transfer": 26100.0,
+          "sell": 26423.0
         },
         {
           "currency": "AUD",
-          "buy_cash": 18124.0,
-          "buy_transfer": 18243.0,
-          "sell": 18863.0
+          "buy_cash": 18234.0,
+          "buy_transfer": 18353.0,
+          "sell": 18935.0
         },
         {
           "currency": "EUR",
-          "buy_cash": 29797.0,
-          "buy_transfer": 29917.0,
-          "sell": 31113.0
+          "buy_cash": 29924.0,
+          "buy_transfer": 30045.0,
+          "sell": 31176.0
         },
         {
           "currency": "JPY",
-          "buy_cash": 160.62,
-          "buy_transfer": 161.43,
-          "sell": 168.53
+          "buy_cash": 160.73,
+          "buy_transfer": 161.54,
+          "sell": 168.27
         },
         {
           "currency": "GBP",
           "buy_cash": null,
-          "buy_transfer": 34742.0,
-          "sell": 35799.0
+          "buy_transfer": 34859.0,
+          "sell": 35839.0
         }
       ],
       "error": false,
@@ -203,33 +203,33 @@
       "rates": [
         {
           "currency": "USD",
-          "buy_cash": 26142.0,
-          "buy_transfer": 26142.0,
-          "sell": 26412.0
+          "buy_cash": 26100.0,
+          "buy_transfer": 26100.0,
+          "sell": 26423.0
         },
         {
           "currency": "AUD",
-          "buy_cash": 18185.0,
-          "buy_transfer": 18285.0,
-          "sell": 19210.0
+          "buy_cash": 18256.0,
+          "buy_transfer": 18356.0,
+          "sell": 19281.0
         },
         {
           "currency": "EUR",
-          "buy_cash": 30024.0,
-          "buy_transfer": 30054.0,
-          "sell": 31779.0
+          "buy_cash": 30048.0,
+          "buy_transfer": 30078.0,
+          "sell": 31803.0
         },
         {
           "currency": "JPY",
-          "buy_cash": 160.85,
-          "buy_transfer": 161.35,
-          "sell": 171.89
+          "buy_cash": 160.69,
+          "buy_transfer": 161.19,
+          "sell": 171.73
         },
         {
           "currency": "GBP",
-          "buy_cash": 34804.0,
-          "buy_transfer": 34854.0,
-          "sell": 36615.0
+          "buy_cash": 34829.0,
+          "buy_transfer": 34879.0,
+          "sell": 36647.0
         }
       ],
       "error": false,
