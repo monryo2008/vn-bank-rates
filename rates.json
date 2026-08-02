@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-01T09:27:06.584538+07:00",
+  "updated_at": "2026-08-02T09:24:42.121803+07:00",
   "banks": {
     "vietcombank": {
       "name": "Vietcombank",
@@ -86,33 +86,33 @@
       "rates": [
         {
           "currency": "USD",
-          "buy_cash": 26096.0,
-          "buy_transfer": 26105.0,
-          "sell": 26475.0
+          "buy_cash": 26101.0,
+          "buy_transfer": 26110.0,
+          "sell": 26480.0
         },
         {
           "currency": "AUD",
-          "buy_cash": 17926.0,
-          "buy_transfer": 18200.0,
-          "sell": 18784.0
+          "buy_cash": 17929.0,
+          "buy_transfer": 18203.0,
+          "sell": 18788.0
         },
         {
           "currency": "EUR",
-          "buy_cash": 29674.0,
-          "buy_transfer": 29896.0,
-          "sell": 30980.0
+          "buy_cash": 29680.0,
+          "buy_transfer": 29902.0,
+          "sell": 30985.0
         },
         {
           "currency": "JPY",
-          "buy_cash": 160.1,
-          "buy_transfer": 164.28,
-          "sell": 170.44
+          "buy_cash": 160.13,
+          "buy_transfer": 164.31,
+          "sell": 170.47
         },
         {
           "currency": "GBP",
-          "buy_cash": 34638.0,
-          "buy_transfer": 35031.0,
-          "sell": 35969.0
+          "buy_cash": 34645.0,
+          "buy_transfer": 35037.0,
+          "sell": 35975.0
         }
       ],
       "error": false,
