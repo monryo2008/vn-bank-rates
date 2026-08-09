@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-08T08:15:54.997671+07:00",
+  "updated_at": "2026-08-09T08:20:55.496670+07:00",
   "banks": {
     "vietcombank": {
       "name": "Vietcombank",
@@ -92,27 +92,27 @@
         },
         {
           "currency": "AUD",
-          "buy_cash": 17898.0,
-          "buy_transfer": 18172.0,
-          "sell": 18751.0
+          "buy_cash": 17979.0,
+          "buy_transfer": 18254.0,
+          "sell": 18833.0
         },
         {
           "currency": "EUR",
-          "buy_cash": 29568.0,
-          "buy_transfer": 29789.0,
-          "sell": 30870.0
+          "buy_cash": 29646.0,
+          "buy_transfer": 29868.0,
+          "sell": 30949.0
         },
         {
           "currency": "JPY",
-          "buy_cash": 158.75,
-          "buy_transfer": 162.91,
-          "sell": 169.07
+          "buy_cash": 159.27,
+          "buy_transfer": 163.44,
+          "sell": 169.62
         },
         {
           "currency": "GBP",
-          "buy_cash": 34398.0,
-          "buy_transfer": 34790.0,
-          "sell": 35728.0
+          "buy_cash": 34531.0,
+          "buy_transfer": 34923.0,
+          "sell": 35875.0
         }
       ],
       "error": false,
@@ -166,27 +166,27 @@
         },
         {
           "currency": "AUD",
-          "buy_cash": 18048.0,
-          "buy_transfer": 18166.0,
-          "sell": 18785.0
+          "buy_cash": 18124.0,
+          "buy_transfer": 18243.0,
+          "sell": 18865.0
         },
         {
           "currency": "EUR",
-          "buy_cash": 29582.0,
-          "buy_transfer": 29700.0,
-          "sell": 30891.0
+          "buy_cash": 29684.0,
+          "buy_transfer": 29803.0,
+          "sell": 30998.0
         },
         {
           "currency": "JPY",
-          "buy_cash": 161.76,
-          "buy_transfer": 162.57,
-          "sell": 169.74
+          "buy_cash": 162.38,
+          "buy_transfer": 163.19,
+          "sell": 170.39
         },
         {
           "currency": "GBP",
           "buy_cash": null,
-          "buy_transfer": 34698.0,
-          "sell": 35757.0
+          "buy_transfer": 34827.0,
+          "sell": 35890.0
         }
       ],
       "error": false,
