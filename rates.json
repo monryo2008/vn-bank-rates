@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-19T09:56:16.161278+07:00",
+  "updated_at": "2026-09-20T10:08:58.890573+07:00",
   "banks": {
     "vietcombank": {
       "name": "Vietcombank",
@@ -40,9 +40,40 @@
     },
     "bidv": {
       "name": "BIDV",
-      "rates": [],
-      "error": true,
-      "error_msg": "VNAppMob token unavailable"
+      "rates": [
+        {
+          "currency": "USD",
+          "buy_cash": 25810.0,
+          "buy_transfer": 25810.0,
+          "sell": 26190.0
+        },
+        {
+          "currency": "AUD",
+          "buy_cash": 18172.0,
+          "buy_transfer": 18238.0,
+          "sell": 18935.0
+        },
+        {
+          "currency": "EUR",
+          "buy_cash": 29263.0,
+          "buy_transfer": 29286.0,
+          "sell": 30675.0
+        },
+        {
+          "currency": "JPY",
+          "buy_cash": 160.57,
+          "buy_transfer": 160.86,
+          "sell": 170.59
+        },
+        {
+          "currency": "GBP",
+          "buy_cash": 34119.0,
+          "buy_transfer": 34211.0,
+          "sell": 35399.0
+        }
+      ],
+      "error": false,
+      "error_msg": null
     },
     "vietinbank": {
       "name": "VietinBank",
@@ -52,9 +83,40 @@
     },
     "techcombank": {
       "name": "Techcombank",
-      "rates": [],
-      "error": true,
-      "error_msg": "VNAppMob token unavailable"
+      "rates": [
+        {
+          "currency": "USD",
+          "buy_cash": 25821.0,
+          "buy_transfer": 25835.0,
+          "sell": 26205.0
+        },
+        {
+          "currency": "AUD",
+          "buy_cash": 17982.0,
+          "buy_transfer": 18257.0,
+          "sell": 18841.0
+        },
+        {
+          "currency": "EUR",
+          "buy_cash": 29245.0,
+          "buy_transfer": 29465.0,
+          "sell": 30548.0
+        },
+        {
+          "currency": "JPY",
+          "buy_cash": 159.09,
+          "buy_transfer": 162.76,
+          "sell": 169.94
+        },
+        {
+          "currency": "GBP",
+          "buy_cash": 34044.0,
+          "buy_transfer": 34434.0,
+          "sell": 35374.0
+        }
+      ],
+      "error": false,
+      "error_msg": null
     },
     "agribank": {
       "name": "Agribank",
